@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +11,54 @@
             color: #fff;
             text-align: center;
             padding: 50px;
-            margin: 0; /* Remove default margin */
+            margin: 0;
+            /* Remove default margin */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Use full viewport height */
+            height: 100vh;
+            /* Use full viewport height */
         }
+
         .content {
-            width: 80%; /* Adjust width as needed */
+            width: 80%;
+            /* Adjust width as needed */
             background-color: #333;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+
         h1 {
             font-size: 48px;
-            color: #ff4d4d; /* Red */
-            margin-bottom: 20px; /* Add some space below the heading */
+            color: #ff4d4d;
+            /* Red */
+            margin-bottom: 20px;
+            /* Add some space below the heading */
         }
+
         p {
             font-size: 20px;
             color: #ccc;
             line-height: 1.6;
-            margin-bottom: 30px; /* Add some space below the paragraph */
+            margin-bottom: 30px;
+            /* Add some space below the paragraph */
         }
+
         .countdown {
             font-size: 28px;
-            color: #ff4d4d; /* Red */
+            color: #ff4d4d;
+            /* Red */
         }
     </style>
 </head>
+
 <body>
+    <center><img src="https://images.app.goo.gl/TvAnVVmKYPC2jaXJA"></center>
     <div class="content">
         <h1>Coming Soon</h1>
-        <p>Our website is under construction. We're working hard to improve the site and we'll be ready to launch soon!</p>
+        <p>Our website is under construction. We're working hard to improve the site and we'll be ready to launch soon!
+        </p>
         <div class="countdown">
             <!-- <p id="countdown"></p> -->
         </div>
@@ -56,7 +71,7 @@
         var countDownDate = new Date("Jul 31, 2024 00:00:00").getTime();
 
         // Update the countdown every 1 second
-        var x = setInterval(function() {
+        var x = setInterval(function () {
 
             // Get today's date and time
             var now = new Date().getTime();
@@ -72,7 +87,7 @@
 
             // Display the result in the element with id="countdown"
             document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+                + minutes + "m " + seconds + "s ";
 
             // If the countdown is finished, write some text
             if (distance < 0) {
@@ -82,4 +97,5 @@
         }, 1000);
     </script>
 </body>
+
 </html>
