@@ -6,14 +6,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #dfdcdc;
+            background-color: #f0eded;
             color: #fff;
             text-align: center;
             padding: 50px;
+            margin: 0; /* Remove default margin */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Use full viewport height */
         }
         .content {
-            max-width: 600px;
-            margin: 0 auto;
+            width: 80%; /* Adjust width as needed */
             background-color: #333;
             padding: 30px;
             border-radius: 8px;
@@ -22,15 +26,16 @@
         h1 {
             font-size: 48px;
             color: #ff4d4d; /* Red */
+            margin-bottom: 20px; /* Add some space below the heading */
         }
         p {
             font-size: 20px;
             color: #ccc;
             line-height: 1.6;
+            margin-bottom: 30px; /* Add some space below the paragraph */
         }
         .countdown {
             font-size: 28px;
-            margin-top: 20px;
             color: #ff4d4d; /* Red */
         }
     </style>
@@ -40,7 +45,7 @@
         <h1>Coming Soon</h1>
         <p>Our website is under construction. We're working hard to improve the site and we'll be ready to launch soon!</p>
         <div class="countdown">
-            <p id="countdown"></p>
+            <!-- <p id="countdown"></p> -->
         </div>
     </div>
 
